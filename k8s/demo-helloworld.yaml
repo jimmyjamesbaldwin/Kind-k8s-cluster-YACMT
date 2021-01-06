@@ -1,0 +1,42 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: foo-app
+  labels:
+    app: foo
+spec:
+  containers:
+  - name: foo-app
+    image: hashicorp/http-echo:0.2.3
+    args:
+    - "-text=hey"
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: foo-service
+spec:
+  selector:
+    app: foo
+  ports:
+  - port: 5678
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: foo-ingress
+  annotations:
+    cert-manager.io/cluster-issuer: "ca-issuer"
+spec:
+  tls:
+  - hosts:
+    - foo-tls.cluster.com
+    secretName: foo-tls
+  rules:
+  - host: foo-tls.cluster.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: foo-service
+          servicePort: 5678
