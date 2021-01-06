@@ -20,4 +20,5 @@ One slight flaw in the plan here is that when running Kind locally with Nginx, s
 
 ### 3. Head to the app
 Our app should be up and running, and hosted at: [https://foo-tls.example.com](https://foo-tls.example.com). If we checkout the certificate we should see a nice short-lived certificate issued to our application. Success!
+
 ![app and certificate screenshot](./screenshots/cert.PNG)
