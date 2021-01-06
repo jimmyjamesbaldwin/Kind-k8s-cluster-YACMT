@@ -2,7 +2,7 @@
 Yet Another Cert-Manager Tutorial - a simple project to build a local Kubernetes cluster (using Kind), install ingress-nginx as an Ingress Controller, create a self-signed CA with openssl and configure cert-manager on the cluster, and deploy a demo helloworld application all within a couple of minutes.
 
 
-<img src="https://i0.wp.com/www.upnxtblog.com/wp-content/uploads/2017/11/kubernetes.jpg" width="100"><img src="https://d33wubrfki0l68.cloudfront.net/d0c94836ab5b896f29728f3c4798054539303799/9f948/logo/logo.png" width="100"><img src="https://landscape.cncf.io/logos/cert-manager.svg" width="100"><img src="https://p1.hiclipart.com/preview/542/732/898/tshirt-text-logo-line-unisex-angle-nginx-symbol-png-clipart-thumbnail.jpg" width="100">
+<img src="https://d33wubrfki0l68.cloudfront.net/d0c94836ab5b896f29728f3c4798054539303799/9f948/logo/logo.png" width="100"><img src="https://landscape.cncf.io/logos/cert-manager.svg" width="100"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ACmQRtkZD__uJfXezLZfaW7wLZVcAPKiGA&usqp=CAU" width="100">
 
 
 
