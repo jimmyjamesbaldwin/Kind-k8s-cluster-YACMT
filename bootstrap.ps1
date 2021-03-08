@@ -16,7 +16,7 @@ $keypairYaml = $keypairYaml -replace '<key>', ([Convert]::ToBase64String((Get-Co
 
 Write-Host "`nDeploying cert-manager..." -ForegroundColor Green
 kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.1.0/cert-manager.yaml
-Start-Sleep 90 # wait for the cert-manager admission controllers to finish setting up
+Start-Sleep 240 # wait for the cert-manager admission controllers to finish setting up
 kubectl apply -f .\k8s\ca-key-pair.yaml
 kubectl apply -f .\k8s\ca-issuer.yaml
 
